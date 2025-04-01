@@ -47,7 +47,7 @@ function Home() {
             </div>
           </div>
           <PasswordInput/>
-          <Button>Submit</Button>
+          <Button variant={'default'}>Submit</Button>
       </div>
     </div>
   )
@@ -68,7 +68,7 @@ function PasswordInput() {
         onMouseDown={() => setShow(true)}
         onMouseUp={() => setShow(false)}
         onMouseLeave={() => setShow(false)}
-        className="absolute inset-y-0 right-3 flex items-center text-gray-500 hover:text-gray-700"
+        className="absolute inset-y-0 right-3 flex items-center"
       >
         {show ? <EyeOff size={20} /> : <Eye size={20} />}
       </button>

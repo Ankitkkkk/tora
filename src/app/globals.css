@@ -13,71 +13,75 @@ body {
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  /* Light theme colors replaced with Dracula theme */
+  --background: #f8f8f2; /* cullen/light default */
+  --foreground: #282a36; /* darker/nosferatu default */
+  --card: #f8f8f2; /* cullen/light default */
+  --card-foreground: #282a36; /* darker/nosferatu default */
+  --popover: #f8f8f2; /* cullen/light default */
+  --popover-foreground: #282a36; /* darker/nosferatu default */
+  --primary: #282a36; /* darker/nosferatu default */
+  --primary-foreground: #f8f8f2; /* cullen/light default */
+  --secondary: #f7f7fb; /* dark/aro 50 */
+  --secondary-foreground: #282a36; /* darker/nosferatu default */
+  --muted: #f7f7fb; /* dark/aro 50 */
+  --muted-foreground: #6272a4; /* vonCount/blue default */
+  --accent: #f7f7fb; /* dark/aro 50 */
+  --accent-foreground: #282a36; /* darker/nosferatu default */
+  --destructive: #ff5555; /* marcelin/red default */
+  --border: #dfe1ed; /* dark/aro 100 */
+  --input: #dfe1ed; /* dark/aro 100 */
+  --ring: #858bb0; /* dark/aro 500 */
+  --chart-1: #bd93f9; /* dracula/purple default */
+  --chart-2: #8be9fd; /* vanHelsing/cyan default */
+  --chart-3: #50fa7b; /* blade/green default */
+  --chart-4: #ffb86c; /* morbius/orange default */
+  --chart-5: #ff79c6; /* buffy/pink default */
+  --sidebar: #f8f8f2; /* cullen/light default */
+  --sidebar-foreground: #282a36; /* darker/nosferatu default */
+  --sidebar-primary: #282a36; /* darker/nosferatu default */
+  --sidebar-primary-foreground: #f8f8f2; /* cullen/light default */
+  --sidebar-accent: #f7f7fb; /* dark/aro 50 */
+  --sidebar-accent-foreground: #282a36; /* darker/nosferatu default */
+  --sidebar-border: #dfe1ed; /* dark/aro 100 */
+  --sidebar-ring: #858bb0; /* dark/aro 500 */
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  /* Dark theme colors replaced with Dracula darker theme */
+  --background: #282a36; /* darker/nosferatu default */
+  --foreground: #f8f8f2; /* cullen/light default */
+  --card: #373a4d; /* darker/nosferatu 800 */
+  --card-foreground: #f8f8f2; /* cullen/light default */
+  --popover: #373a4d; /* darker/nosferatu 800 */
+  --popover-foreground: #f8f8f2; /* cullen/light default */
+  --primary: #f8f8f2; /* cullen/light default */
+  --primary-foreground: #373a4d; /* darker/nosferatu 800 */
+  --secondary: #454a64; /* darker/nosferatu 700 */
+  --secondary-foreground: #f8f8f2; /* cullen/light default */
+  --muted: #454a64; /* darker/nosferatu 700 */
+  --muted-foreground: #9ba0c0; /* dark/aro 400 */
+  --accent: #454a64; /* darker/nosferatu 700 */
+  --accent-foreground: #f8f8f2; /* cullen/light default */
+  --destructive: #ff5555; /* marcelin/red default */
+  --border: rgba(248, 248, 242, 0.1); /* cullen/light with 10% opacity */
+  --input: rgba(248, 248, 242, 0.15); /* cullen/light with 15% opacity */
+  --ring: #71779f; /* dark/aro 600 */
+  --chart-1: #bd93f9; /* dracula/purple default */
+  --chart-2: #8be9fd; /* vanHelsing/cyan default */
+  --chart-3: #50fa7b; /* blade/green default */
+  --chart-4: #ff79c6; /* buffy/pink default */
+  --chart-5: #ffb86c; /* morbius/orange default */
+  --sidebar: #373a4d; /* darker/nosferatu 800 */
+  --sidebar-foreground: #f8f8f2; /* cullen/light default */
+  --sidebar-primary: #bd93f9; /* dracula/purple default */
+  --sidebar-primary-foreground: #f8f8f2; /* cullen/light default */
+  --sidebar-accent: #454a64; /* darker/nosferatu 700 */
+  --sidebar-accent-foreground: #f8f8f2; /* cullen/light default */
+  --sidebar-border: rgba(248, 248, 242, 0.1); /* cullen/light with 10% opacity */
+  --sidebar-ring: #71779f; /* dark/aro 600 */
+  --shadow-color: 98, 114, 164, 0.6;
+  --card-border: rgba(248, 248, 242, 0.1);
 }
 
 @theme inline {
@@ -132,8 +136,7 @@ body {
   @apply w-screen h-screen flex justify-center  items-center
 }
 .home-box {
-  @apply flex justify-center items-center flex-col w-md h-max py-8 border-2 border-gray-300 rounded-lg shadow-[6px_6px_12px_rgba(0,0,0,0.3),-6px_-6px_12px_rgba(255,255,255,0.8)]
-
+  @apply flex justify-center items-center flex-col w-md h-max py-8 border-2 border-[var(--card-border)] rounded-lg shadow-[10px_0_15px_-5px_rgba(var(--shadow-color)),-10px_0_15px_-5px_rgba(var(--shadow-color))]
 }
 .home-form-field {
   /* border: 2px solid red; */
@@ -147,4 +150,11 @@ body {
 .home-form-field-element Label {
   /* border: 2px solid red; */
   @apply text-sm float-left pt-3 pb-1
+}
+
+.shadow {
+  box-shadow: var(--shadow-color);
+}
+.card-border {
+  border: var(--card-border);
 }
