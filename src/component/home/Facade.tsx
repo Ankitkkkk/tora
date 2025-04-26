@@ -27,7 +27,7 @@ const connectionSchema = z.object({
 })
 
 const applyTheme = (theme: Theme) => {
-  if (!theme) return
+  if (!theme)
   if (typeof document !== 'undefined') {
     const root = document.documentElement;
     for (const key of Object.keys(theme) as (keyof Theme)[]) {
@@ -39,8 +39,15 @@ const applyTheme = (theme: Theme) => {
   }
 };
 
-function Home() {
+function Facade() {
   const [res, setRes] = useState(0);
+  const updateEnvTheme = (theme: Theme) => {
+    console.log("theme foreground: " + theme.foreground)
+    document.documentElement.style.setProperty('--color', theme.foreground);
+    applyTheme(theme)
+    const res1 = res + 1;
+    setRes(res1)
+  }
   
   const click = async () => {
     const response = parse<Response<Theme[]>>(await invoke('chain', {
@@ -139,5 +146,5 @@ function PasswordInput() {
   );
 }
 
-export default Home
+export default Facade
 
