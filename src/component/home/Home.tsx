@@ -1,8 +1,9 @@
 import { Button } from '@/components/ui/button'
 import { Theme } from '@/util/objects/Themes'
 import { parse , Response} from '@/util/objects/Response'
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import { invoke } from '@tauri-apps/api/core'
+import AdjustableSidebar from './AdjustableSidebar'
 
 
 const applyTheme = (theme: Theme) => {
@@ -29,15 +30,11 @@ function Home() {
       }))
     applyTheme(response.content[0])
   }
-
   return (
-    <div className='flex justify-center h-screen items-center border-2 border-solid border-[red]'>
-      <div className='border-2 border-solid border-[green]'>
-        Create Connection
-      </div>
-
+    <div className="grid grid-cols-48 min-h-screen">
+      <div className="col-span-47 border shadow"><AdjustableSidebar/></div>
+      <div className="col-span-1 border shadow">Item 3</div>
     </div>
-    
   )
 }
 
